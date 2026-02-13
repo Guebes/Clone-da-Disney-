@@ -1,0 +1,35 @@
+@use './mixin' as *;
+@use './var' as *;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Bigtext{
+    @include text(18px);
+}
+
+.text{
+    @include text(16px); // Essa classe também vai ser usada no texto "Assine a Disney+"
+}
+
+.SmallText{
+    @include text(12px);
+}
+
+.Title{
+    @include text(28px);
+}
+
+.linkText{
+    @include text(28px);
+    text-decoration: underline;
+}
+
+///////////////////////////////////////
+.hero{ //É o banner ( conteúdo principal ) do site.
+    padding: 5.6vw; //5.6vw (view width) = 107px
+    min-height: 80vh;
+    background-image: url('../C:\Users\edria\OneDrive\Área de Trabalho\Repositorio\EBAC\2026\Clone - Disney+\Clone-da-Disney-\Img\FrontEnd M21 - images (3)\images\hero_desktop.jpeg');
+}

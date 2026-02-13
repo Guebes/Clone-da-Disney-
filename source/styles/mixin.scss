@@ -1,0 +1,9 @@
+@use './var' as *; 
+
+@mixin text($hText){
+    font-size: $hText;
+    line-height: $hText + 10px;
+    
+    background-color: $corTextoPrincipal;
+    color: $corTextoSecundaria;
+}
