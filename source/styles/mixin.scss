@@ -3,7 +3,7 @@
 @mixin text($hText){
     font-size: $hText;
     line-height: $hText + 10px;
-    
-    background-color: $corTextoPrincipal;
     color: $corTextoSecundaria;
+    text-align: center;
+    margin-top: 10px;
 }

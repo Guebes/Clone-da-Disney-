@@ -15,21 +15,37 @@
 }
 
 .SmallText{
-    @include text(12px);
+    @include text(13px);
 }
 
 .Title{
     @include text(28px);
 }
 
+.link{
+    max-width: 400px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .linkText{
-    @include text(28px);
+    @include text(17px);
     text-decoration: underline;
 }
 
 ///////////////////////////////////////
 .hero{ //É o banner ( conteúdo principal ) do site.
     padding: 5.6vw; //5.6vw (view width) = 107px
-    min-height: 80vh;
-    background-image: url('../C:\Users\edria\OneDrive\Área de Trabalho\Repositorio\EBAC\2026\Clone - Disney+\Clone-da-Disney-\Img\FrontEnd M21 - images (3)\images\hero_desktop.jpeg');
+    min-height: 90vh;
+    background-image: url('../../Img/FrontEnd M21 - images (3)/images/hero_desktop.jpeg');
+    background-size: cover; //Redimenciona a img de acordo com o dispositivo.
+    background-position: center; //Centraliza a imagem
+}
+
+.heroContent{
+    max-width: 400px;
+}
+// -- fazendo agora
+.priceText{
+    justify-content: center;
 }
