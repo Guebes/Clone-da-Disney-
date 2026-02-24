@@ -1,0 +1,10 @@
+@font-face {
+  font-family: FonteExterna;
+  src: url("../../Img/FrontEnd M21 - fonts (2)/fonts/Avenir-Bold.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: FonteExterna;
+  src: url("../../Img/FrontEnd M21 - fonts (2)/fonts/Avenir-Regular.woff2");
+  font-weight: 500;
+}
