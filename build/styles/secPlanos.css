@@ -1,0 +1,52 @@
+.Plano_Assinatura .Plano_Assinatura_Titulo {
+  padding-top: 500px;
+  margin-bottom: 0;
+}
+
+.Plano_Assinatura_lista {
+  padding: 1.6vw;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+.Plano_Assinatura_lista_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 350px;
+  padding-bottom: 200px;
+}
+.Plano_Assinatura_lista_item:nth-child(2) {
+  background-image: url("../../source/img_src/fundo_combo_plus.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 50px;
+}
+.Plano_Assinatura_lista_item_AreaBotao {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.Plano_Assinatura_lista_item button {
+  padding: 20px 50px;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 9px;
+  color: white;
+  background-color: blueviolet;
+}
+.Plano_Assinatura_lista strong.Bigtext {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  display: block;
+}
+.Plano_Assinatura_lista .Plano_Assinatura_lista_img {
+  width: 100%;
+}
+.Plano_Assinatura_lista .pt {
+  padding-top: 29px;
+}

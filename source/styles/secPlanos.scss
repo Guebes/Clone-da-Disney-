@@ -1,0 +1,76 @@
+// .Plano_Assinatura_lista_item {
+//     display: flex;            /* Ativa o modo flexbox */
+//     flex-direction: column;   /* Empilha os itens verticalmente (coluna) */
+//     align-items: center;      /* Centraliza os itens horizontalmente */
+//     text-align: center;       /* Garante que o texto dentro do strong centralize */
+//     gap: 10px;                /* Opcional: cria um espaço entre a imagem e o preço */
+// }
+
+.Plano_Assinatura {
+
+    .Plano_Assinatura_Titulo {
+        padding-top: 500px;
+        margin-bottom: 0;
+    }
+}
+
+.Plano_Assinatura_lista {
+    //ul ( container )
+    padding: 1.6vw;
+    display: flex;
+    justify-content: center; // Centraliza as colunas na tela
+    gap: 2rem; // Espaço entre as colunas
+    list-style: none;
+
+
+    &_item {
+        flex: 1; // Faz as colunas terem o mesmo tamanho
+        display: flex; // Ativa flex no conteúdo interno
+        flex-direction: column; // Empilha os itens (img, texto, botão)
+        align-items: center; // CENTRALIZA tudo horizontalmente (incluindo o botão)
+        text-align: center; // Centraliza as linhas de texto do <p>
+        max-width: 350px;
+        padding-bottom: 200px;
+
+
+        &:nth-child(2) {
+            background-image: url('../../source/img_src/fundo_combo_plus.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0 50px;
+        }
+
+        // Estilizando a área do botão especificamente
+        &_AreaBotao {
+            width: 100%; // Ocupa a largura da coluna
+            display: flex;
+            justify-content: center; // Centraliza o botão dentro da div
+            // Empurra o botão para o final da coluna (opcional)
+            padding-top: 20px;
+        }
+
+        button {
+            padding: 20px 50px;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 9px;
+            color: white;
+            background-color: blueviolet;
+            // Estilize o botão aqui (cor, borda, etc)
+        }
+    }
+
+    strong.Bigtext {
+        font-size: 1.5rem;
+        margin: 15px 0;
+        display: block; // Não precisa de flex se o pai já centraliza
+    }
+
+    .Plano_Assinatura_lista_img {
+        width: 100%;
+    }
+
+    .pt {
+        padding-top: 29px;
+    }
+}

@@ -1,0 +1,39 @@
+.Section_filmes {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+}
+
+.filmes_ul {
+  display: none;
+  column-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1350px;
+  max-width: 100%;
+  list-style: none;
+}
+.filmes_ul.active {
+  display: grid;
+}
+.filmes_ul .filmes_item img {
+  width: 100%;
+}
+
+.NavMovies {
+  width: 93.8%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.NavMovies .NavButton {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.NavMovies .active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  display: grid;
+}

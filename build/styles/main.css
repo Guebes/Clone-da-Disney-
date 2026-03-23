@@ -8,6 +8,99 @@
   src: url("../../Img/FrontEnd M21 - fonts (2)/fonts/Avenir-Regular.woff2");
   font-weight: 500;
 }
+.Section_filmes {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+}
+
+.filmes_ul {
+  display: none;
+  column-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1350px;
+  max-width: 100%;
+  list-style: none;
+}
+.filmes_ul.active {
+  display: grid;
+}
+.filmes_ul .filmes_item img {
+  width: 100%;
+}
+
+.NavMovies {
+  width: 93.8%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.NavMovies .NavButton {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.NavMovies .active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  display: grid;
+}
+
+.Plano_Assinatura .Plano_Assinatura_Titulo {
+  padding-top: 500px;
+  margin-bottom: 0;
+}
+
+.Plano_Assinatura_lista {
+  padding: 1.6vw;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+.Plano_Assinatura_lista_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 350px;
+  padding-bottom: 200px;
+}
+.Plano_Assinatura_lista_item:nth-child(2) {
+  background-image: url("../../source/img_src/fundo_combo_plus.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 50px;
+}
+.Plano_Assinatura_lista_item_AreaBotao {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.Plano_Assinatura_lista_item button {
+  padding: 20px 50px;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 9px;
+  color: white;
+  background-color: blueviolet;
+}
+.Plano_Assinatura_lista strong.Bigtext {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  display: block;
+}
+.Plano_Assinatura_lista .Plano_Assinatura_lista_img {
+  width: 100%;
+}
+.Plano_Assinatura_lista .pt {
+  padding-top: 29px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +109,7 @@
 
 body {
   font-family: FonteExterna, sans-serif;
+  background-color: rgb(46, 46, 46);
 }
 
 .Bigtext {
@@ -67,7 +161,7 @@ body {
 
 .hero {
   padding: 5.6vw;
-  min-height: 90vh;
+  min-height: 80vh;
   background-image: url("../../Img/FrontEnd M21 - images (3)/images/hero_desktop.jpeg");
   background-size: cover;
   background-position: center;

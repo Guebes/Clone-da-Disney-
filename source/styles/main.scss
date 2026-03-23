@@ -1,5 +1,8 @@
 @use './mixin' as *;
 @use './var' as *;
+@use './Sec_movies.scss' as *;
+@use './secPlanos.scss' as *;
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +11,7 @@
 
 body{
     font-family: FonteExterna, sans-serif;
+    background-color: rgb(46, 46, 46);
 }
 
 .Bigtext{
@@ -40,7 +44,7 @@ body{
 ///////////////////////////////////////
 .hero{ //É o banner ( conteúdo principal ) do site.
     padding: 5.6vw; //5.6vw (view width) = 107px
-    min-height: 90vh;
+    min-height: 80vh;
     background-image: url('../../Img/FrontEnd M21 - images (3)/images/hero_desktop.jpeg');
     background-size: cover; //Redimenciona a img de acordo com o dispositivo.
     background-position: center; //Centraliza a imagem
