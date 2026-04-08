@@ -1,0 +1,17 @@
+.AssistaQualquer_lugar {
+  display: grid;
+  max-width: 958px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  margin: 20vw auto;
+  padding: 50px;
+}
+.AssistaQualquer_lugar img {
+  width: 600px;
+  height: 500px;
+}
+.AssistaQualquer_lugar .TextoAssista {
+  width: 400px;
+}
